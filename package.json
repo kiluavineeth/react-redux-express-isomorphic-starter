@@ -1,0 +1,55 @@
+{
+  "name": "blacktrain",
+  "version": "1.0.0",
+  "description": "This is a react web app",
+  "main": "index.tsx",
+  "scripts": {
+    "clean": "rimraf build",
+    "prebuild": "npm run clean",
+    "build": "webpack --config webpackConfigs/webpack.config.js",
+    "postbuild": "webpack --config webpackConfigs/webpack.server.config.js",
+    "start": "node build/server.js",
+    "a": "webpack --config webpackConfigs/webpack.config.js && yarn start",
+    "b": "yarn build && yarn start"
+  },
+  "author": "kilua",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "redux",
+    "typescript",
+    "webpack",
+    "starter",
+    "kit",
+    "boilerplate",
+    "router",
+    "react router",
+    "isomorphic",
+    "server side rendering"
+  ],
+  "devDependencies": {
+    "@types/react": "16.0.20",
+    "@types/react-dom": "^16.0.2",
+    "@types/react-redux": "^5.0.12",
+    "@types/react-router": "^3.0.2",
+    "@types/redux": "^3.6.31",
+    "@types/redux-thunk": "^2.1.31",
+    "fs": "^0.0.1-security",
+    "source-map-loader": "^0.2.3",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "typings": "^2.1.1",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0"
+  }
+}

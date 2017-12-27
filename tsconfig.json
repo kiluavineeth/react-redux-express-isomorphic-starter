@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "src/*"
+            ]
+        },
+        "jsx": "react",
+        "sourceMap": true,
+        "inlineSourceMap": false,
+        "inlineSources": false,
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "outDir": "build",
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "target": "es6",
+        "moduleResolution": "node"
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}
