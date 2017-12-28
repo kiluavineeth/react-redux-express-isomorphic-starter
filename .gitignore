@@ -1,0 +1,3 @@
+# Excluded list of files
+/build
+/node_modules
