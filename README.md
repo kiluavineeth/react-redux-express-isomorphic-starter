@@ -14,7 +14,7 @@ git clone https://github.com/kiluavineeth/react-redux-express-isomorphic-starter
 Go to the root folder: npm install (or) yarn install
 
 # Build:
-yarn build (or) npm build
+yarn build (or) npm run build
 
 # Run:
 yarn start (or) npm start \
